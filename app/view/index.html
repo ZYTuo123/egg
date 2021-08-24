@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Hacker News</title>
+  </head>
+  <body>
+    <p>id: <%=res.id%> name: <%=res.name%></p>
+    <ul>
+      <%for(item of list) { %>
+      <li>id : <%=item.id%></li>
+      <li>name: <%=item.title%></li>
+      <li>path: <%=item.url%></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

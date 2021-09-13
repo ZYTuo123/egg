@@ -1,0 +1,2172 @@
+{
+  "isOk": true,
+  "msg": "获取成功",
+  "data": [
+    {
+      "_id": "613d9fd4b2313328e3b79b0d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631428564859,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428364480,
+        "WT": 462,
+        "TCP": 28,
+        "ONL": 0,
+        "ALLRT": 95,
+        "TTFB": 462,
+        "DNS": 332
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613d9fedb2313328e3b79b0e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631428589398,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428389039,
+        "WT": 11,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 11,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da013b2313328e3b79b0f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACVUERR",
+      "updated": 1631428627178,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACVUERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428426836,
+        "componentName": "Button",
+        "fileName": "",
+        "propsData": {
+          "type": "info"
+        },
+        "info": "v-on handler",
+        "msg": "window.CodeErr is not a function",
+        "err": "TypeError: window.CodeErr is not a function    && click (eval && Ya (http://data.isjs.cn/lib/vue.min.js:6:91725), <anonymous>:3:1184)    && He (http://data.isjs.cn/lib/vue.min.js:6:11384)    && a.n (http://data.isjs.cn/lib/vue.min.js:6:13168)    "
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da015b2313328e3b79b10",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631428629297,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428428960,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da017b2313328e3b79b11",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPRERR",
+      "updated": 1631428631042,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428430689,
+        "reason": "unknown"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da018b2313328e3b79b12",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631428632298,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428431898,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da01ab2313328e3b79b13",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACVUERR",
+      "updated": 1631428634213,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACVUERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428433875,
+        "componentName": "Button",
+        "fileName": "",
+        "propsData": {
+          "type": "info"
+        },
+        "info": "v-on handler",
+        "msg": "window.CodeErr is not a function",
+        "err": "TypeError: window.CodeErr is not a function    && click (eval && Ya (http://data.isjs.cn/lib/vue.min.js:6:91725), <anonymous>:3:1184)    && He (http://data.isjs.cn/lib/vue.min.js:6:11384)    && a.n (http://data.isjs.cn/lib/vue.min.js:6:13168)    "
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da01bb2313328e3b79b14",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631428635971,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631428435625,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da039b2313328e3b79b15",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631428665486,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631428465137,
+        "WT": 77,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 68,
+        "TTFB": 77,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da042b2313328e3b79b16",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631428674210,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631428473868,
+        "WT": 587,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 583,
+        "TTFB": 587,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da095b2313328e3b79b17",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACTIME",
+      "updated": 1631428757532,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/index.html",
+        "sTme": 1631428557187,
+        "WT": 73,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 71,
+        "TTFB": 73,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da0b0b2313328e3b79b18",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631428784629,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#dataSource2",
+        "sTme": 1631428584272,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 代码异常数据",
+        "attrs": {
+          "href": "#dataSource2",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 67px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da0bfb2313328e3b79b19",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631428799866,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#dataSource1",
+        "sTme": 1631428598551,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 页面访问",
+        "attrs": {
+          "href": "#dataSource1",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 67px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da0c7b2313328e3b79b1a",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631428807101,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#dataSource6",
+        "sTme": 1631428606754,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " Vue异常监控数据",
+        "attrs": {
+          "href": "#dataSource6",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 67px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613da0d4b2313328e3b79b1b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631428820804,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#dataSource11",
+        "sTme": 1631428620427,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " Vue组件渲染异常数据",
+        "attrs": {
+          "href": "#dataSource11",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 67px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613daa9eb2313328e3b79b1c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACTIME",
+      "updated": 1631431326952,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/index.html",
+        "sTme": 1631431126445,
+        "WT": 8,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 8,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dad56b2313328e3b79b1d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432022246,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#QA",
+        "sTme": 1631431821724,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 解决方案",
+        "attrs": {
+          "href": "#QA",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadb5b2313328e3b79b1e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432117771,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#QA",
+        "sTme": 1631431917280,
+        "eId": "",
+        "className": "dataac-cardContent",
+        "val": "1.我需要采集用户行为吗?\n-- 用户行",
+        "attrs": {
+          "class": "dataac-cardContent"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadb6b2313328e3b79b1f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432118321,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#QA",
+        "sTme": 1631431917821,
+        "eId": "",
+        "className": "dataac-cardContent",
+        "val": "1.我需要采集用户行为吗?\n-- 用户行",
+        "attrs": {
+          "class": "dataac-cardContent"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadcab2313328e3b79b20",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432138954,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#tag",
+        "sTme": 1631431938467,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 标识类配置",
+        "attrs": {
+          "href": "#tag",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadceb2313328e3b79b21",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432142344,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#switch",
+        "sTme": 1631431941843,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 全局开关",
+        "attrs": {
+          "href": "#switch",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadd1b2313328e3b79b22",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432145183,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#behavior",
+        "sTme": 1631431944648,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 行为采集",
+        "attrs": {
+          "href": "#behavior",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613daddbb2313328e3b79b23",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432155617,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#datareport",
+        "sTme": 1631431955099,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 数据上报配置",
+        "attrs": {
+          "href": "#datareport",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dade8b2313328e3b79b24",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432168366,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#setCustomAc",
+        "sTme": 1631431967876,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " setCustomAc 方法",
+        "attrs": {
+          "href": "#setCustomAc",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dadecb2313328e3b79b25",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432172332,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#setCustomAc",
+        "sTme": 1631431971832,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " setCustomAc 方法",
+        "attrs": {
+          "href": "#setCustomAc",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dae8ab2313328e3b79b26",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432330346,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#postAcData",
+        "sTme": 1631432129823,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " postAcData 方法",
+        "attrs": {
+          "href": "#postAcData",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 43px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dae9ab2313328e3b79b27",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACCLIK",
+      "updated": 1631432346915,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/index.html#dataSource2",
+        "sTme": 1631432146407,
+        "eId": "",
+        "className": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+        "val": " 代码异常数据",
+        "attrs": {
+          "href": "#dataSource2",
+          "target": "_self",
+          "class": "ivu-menu-item ivu-menu-item-active ivu-menu-item-selected",
+          "style": "padding-left: 67px;"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613daea3b2313328e3b79b28",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631432355246,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631432154747,
+        "WT": 7,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 7,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613daeafb2313328e3b79b29",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACVUERR",
+      "updated": 1631432367250,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACVUERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631432166745,
+        "componentName": "Button",
+        "fileName": "",
+        "propsData": {
+          "type": "info"
+        },
+        "info": "v-on handler",
+        "msg": "window.CodeErr is not a function",
+        "err": "TypeError: window.CodeErr is not a function    && click (eval && Ya (http://data.isjs.cn/lib/vue.min.js:1:1), <anonymous>:3:1184)    && He (http://data.isjs.cn/lib/vue.min.js:6:11384)    && a.n (http://data.isjs.cn/lib/vue.min.js:6:13168)    "
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dbda7b2313328e3b79b2a",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631436199153,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631435997522,
+        "WT": 7,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 7,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dbdb2b2313328e3b79b2b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACCOMP",
+      "updated": 1631436210200,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCOMP",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631436009812,
+        "componentsTimes": {
+          "vue-component-13-Card": [597, 597],
+          "vue-component-26-Divider": [597],
+          "vue-component-42-Layout": [598, 606],
+          "vue-component-49-MenuItem": [
+            603,
+            603,
+            603,
+            603,
+            603,
+            603,
+            603,
+            603,
+            603
+          ],
+          "vue-component-47-Menu": [606],
+          "vue-component-39-Sider": [606]
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dc0ddb2313328e3b79b2c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631437021394,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631436820974,
+        "WT": 8,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 1,
+        "TTFB": 8,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd364b2313328e3b79b2d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631441764780,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631441563020,
+        "WT": 5,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 5,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd36bb2313328e3b79b2e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACVUERR",
+      "updated": 1631441771993,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACVUERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631441571453,
+        "componentName": "Button",
+        "fileName": "",
+        "propsData": {
+          "type": "info"
+        },
+        "info": "v-on handler",
+        "msg": "window.CodeErr is not a function",
+        "err": "TypeError: window.CodeErr is not a function    && click (eval && Ya (http://data.isjs.cn/lib/vue.min.js:6:91725), <anonymous>:3:1184)    && He (http://data.isjs.cn/lib/vue.min.js:6:11384)    && a.n (http://data.isjs.cn/lib/vue.min.js:6:13168)    "
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd5adb2313328e3b79b2f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/appoint/index.html",
+      "type": "ACTIME",
+      "updated": 1631442349917,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/appoint/index.html",
+        "sTme": 1631442149353,
+        "WT": 190,
+        "TCP": 17,
+        "ONL": 0,
+        "ALLRT": 55,
+        "TTFB": 190,
+        "DNS": 111
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd5b7b2313328e3b79b30",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631442359127,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631442158575,
+        "WT": 6,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 6,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd5c6b2313328e3b79b31",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631442374177,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631442173603,
+        "WT": 5,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 1,
+        "TTFB": 5,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dd5ceb2313328e3b79b32",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631442382315,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631442181597,
+        "WT": 6,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 6,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee78b2313328e3b79b33",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631448696756,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631448496058,
+        "WT": 15,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 15,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee80b2313328e3b79b34",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448704044,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448503347,
+        "fromPath": "/",
+        "toPath": "/home",
+        "inTime": 0,
+        "outTime": 1631448503347
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee81b2313328e3b79b35",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACCLIK",
+      "updated": 1631448705213,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/basic/index.html#/home",
+        "sTme": 1631448503363,
+        "eId": "",
+        "className": "ivu-btn ivu-btn-info ivu-btn-ghost",
+        "val": "home",
+        "attrs": {
+          "href": "#/home",
+          "target": "_self",
+          "class": "ivu-btn ivu-btn-info ivu-btn-ghost"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee81b2313328e3b79b36",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448705659,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448504952,
+        "fromPath": "/home",
+        "toPath": "/login",
+        "inTime": 1631448503347,
+        "outTime": 1631448504952
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee81b2313328e3b79b37",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACCLIK",
+      "updated": 1631448705662,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/basic/index.html#/login",
+        "sTme": 1631448504969,
+        "eId": "",
+        "className": "ivu-btn ivu-btn-info ivu-btn-ghost",
+        "val": "login",
+        "attrs": {
+          "href": "#/login",
+          "target": "_self",
+          "class": "ivu-btn ivu-btn-info ivu-btn-ghost"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee82b2313328e3b79b38",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448706589,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448505877,
+        "fromPath": "/login",
+        "toPath": "/user?uuid=123",
+        "toParams": {
+          "uuid": "123"
+        },
+        "inTime": 1631448504952,
+        "outTime": 1631448505877
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee82b2313328e3b79b39",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACCLIK",
+      "updated": 1631448706599,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCLIK",
+        "path": "http://data.isjs.cn/basic/index.html#/user?uuid=123",
+        "sTme": 1631448505893,
+        "eId": "",
+        "className": "ivu-btn ivu-btn-info ivu-btn-ghost",
+        "val": "user",
+        "attrs": {
+          "href": "#/user?uuid=123",
+          "target": "_self",
+          "class": "ivu-btn ivu-btn-info ivu-btn-ghost"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee96b2313328e3b79b3a",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631448726411,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631448525714,
+        "WT": 7,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 1,
+        "TTFB": 7,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee96b2313328e3b79b3b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448726455,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448525727,
+        "fromPath": "/user?uuid=123-{\"uuid\":\"123\"}",
+        "toPath": "http://data.isjs.cn/basic/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448525727
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee9bb2313328e3b79b3c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448731980,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448531274,
+        "fromPath": "http://data.isjs.cn/basic/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/error/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448531274
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee9cb2313328e3b79b3d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631448732165,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448531272,
+        "WT": 5,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 5,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613dee9fb2313328e3b79b3e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631448735616,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448534911,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea1b2313328e3b79b3f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPRERR",
+      "updated": 1631448737422,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448536726,
+        "reason": "unknown"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea2b2313328e3b79b40",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631448738765,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448538061,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea3b2313328e3b79b41",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631448739284,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448538589,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea4b2313328e3b79b42",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPRERR",
+      "updated": 1631448740115,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448539409,
+        "reason": "unknown"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea4b2313328e3b79b43",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPRERR",
+      "updated": 1631448740380,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448539681,
+        "reason": "unknown"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea5b2313328e3b79b44",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631448741607,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631448540911,
+        "WT": 11,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 11,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deea5b2313328e3b79b45",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448741610,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448540914,
+        "fromPath": "http://data.isjs.cn/error/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/performance/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448540914
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deeaab2313328e3b79b46",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/appoint/index.html",
+      "type": "ACTIME",
+      "updated": 1631448746562,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/appoint/index.html",
+        "sTme": 1631448545850,
+        "WT": 6,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 6,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deeabb2313328e3b79b47",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/appoint/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448747061,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448545851,
+        "fromPath": "http://data.isjs.cn/performance/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/appoint/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448545851
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deeb5b2313328e3b79b48",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACTIME",
+      "updated": 1631448757064,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/reportsize/index.html",
+        "sTme": 1631448556362,
+        "WT": 62,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 60,
+        "TTFB": 62,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deeb5b2313328e3b79b49",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448757064,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448556366,
+        "fromPath": "http://data.isjs.cn/imgreport/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/reportsize/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448556366
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deebab2313328e3b79b4a",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/token/index.html",
+      "type": "ACTIME",
+      "updated": 1631448762630,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/token/index.html",
+        "sTme": 1631448561936,
+        "WT": 121,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 118,
+        "TTFB": 121,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deebab2313328e3b79b4b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/token/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448762636,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448561936,
+        "fromPath": "http://data.isjs.cn/reportsize/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/token/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448561936
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deebeb2313328e3b79b4c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631448766755,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631448566052,
+        "WT": 5,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 1,
+        "TTFB": 5,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613deebeb2313328e3b79b4d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPAGE",
+      "updated": 1631448766757,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631448566057,
+        "fromPath": "http://data.isjs.cn/token/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/error/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631448566057
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df426b2313328e3b79b4e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631450150976,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631449950252,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df426b2313328e3b79b4f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACPAGE",
+      "updated": 1631450150979,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631449950254,
+        "fromPath": "http://data.isjs.cn/error/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/performance/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631449950254
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df436b2313328e3b79b50",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACCOMP",
+      "updated": 1631450166744,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCOMP",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631449966055,
+        "componentsTimes": {
+          "vue-component-13-Card": [667, 667],
+          "vue-component-26-Divider": [667],
+          "vue-component-42-Layout": [667, 672],
+          "vue-component-49-MenuItem": [
+            667,
+            668,
+            668,
+            668,
+            668,
+            668,
+            668,
+            668,
+            669
+          ],
+          "vue-component-47-Menu": [671],
+          "vue-component-39-Sider": [672]
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df483b2313328e3b79b51",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631450243935,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631450043268,
+        "WT": 8,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 1,
+        "TTFB": 8,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df707b2313328e3b79b52",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631450887275,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631450686544,
+        "WT": 7,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 7,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df707b2313328e3b79b53",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPAGE",
+      "updated": 1631450887280,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631450686547,
+        "fromPath": "http://data.isjs.cn/performance/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/error/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631450686547
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df70ab2313328e3b79b54",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACRERR",
+      "updated": 1631450890959,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACRERR",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631450690284,
+        "errSubType": "http",
+        "responseURL": "http://data.isjs.cn/error/log",
+        "readyState": 4,
+        "status": 404,
+        "statusText": "Not Found",
+        "requestTime": 0,
+        "response": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404 Not Found"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df77ab2313328e3b79b55",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631451002162,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631450801465,
+        "WT": 12,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 6,
+        "TTFB": 12,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df77ab2313328e3b79b56",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631451002186,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631450801472,
+        "fromPath": "http://data.isjs.cn/error/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/basic/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631450801472
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df782b2313328e3b79b57",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/appoint/index.html",
+      "type": "ACPAGE",
+      "updated": 1631451010122,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631450809454,
+        "fromPath": "http://data.isjs.cn/basic/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/appoint/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631450809454
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613df782b2313328e3b79b58",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/appoint/index.html",
+      "type": "ACTIME",
+      "updated": 1631451010130,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/appoint/index.html",
+        "sTme": 1631450809451,
+        "WT": 7,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 7,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e0710b2313328e3b79b59",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631454992710,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631454790048,
+        "WT": 10,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 10,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e0710b2313328e3b79b5a",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631454992714,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631454790055,
+        "fromPath": "http://data.isjs.cn/appoint/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/basic/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631454790055
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e1158b2313328e3b79b5b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631457624707,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631457423967,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e115bb2313328e3b79b5c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPAGE",
+      "updated": 1631457627382,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631457426670,
+        "fromPath": "http://data.isjs.cn/basic/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/error/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631457426670
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e115bb2313328e3b79b5d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631457627402,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631457426668,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e11a6b2313328e3b79b5e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACTIME",
+      "updated": 1631457702501,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/reportsize/index.html",
+        "sTme": 1631457501789,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e11a6b2313328e3b79b5f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACPAGE",
+      "updated": 1631457702501,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631457501794,
+        "fromPath": "http://data.isjs.cn/imgreport/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/reportsize/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631457501794
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e11b0b2313328e3b79b60",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACPAGE",
+      "updated": 1631457712496,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631457511786,
+        "fromPath": "/",
+        "toPath": "/home",
+        "inTime": 1631457501794,
+        "outTime": 1631457511786
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e11b1b2313328e3b79b61",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACPAGE",
+      "updated": 1631457713016,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631457512311,
+        "fromPath": "/home",
+        "toPath": "/login",
+        "inTime": 1631457511786,
+        "outTime": 1631457512311
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613e11b1b2313328e3b79b62",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/reportsize/index.html",
+      "type": "ACPAGE",
+      "updated": 1631457713686,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631457512985,
+        "fromPath": "/login",
+        "toPath": "/user?uuid=123",
+        "toParams": {
+          "uuid": "123"
+        },
+        "inTime": 1631457512311,
+        "outTime": 1631457512985
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1384b2313328e3b79b6c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACTIME",
+      "updated": 1631523716736,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/basic/index.html",
+        "sTme": 1631523515498,
+        "WT": 13,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 7,
+        "TTFB": 13,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1384b2313328e3b79b6d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/basic/index.html",
+      "type": "ACPAGE",
+      "updated": 1631523716739,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631523515505,
+        "fromPath": "http://data.isjs.cn/imgreport/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/basic/index.html#/",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631523515505
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1388b2313328e3b79b6e",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACTIME",
+      "updated": 1631523720302,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/error/index.html",
+        "sTme": 1631523519072,
+        "WT": 6,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 2,
+        "TTFB": 6,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1388b2313328e3b79b6f",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/error/index.html",
+      "type": "ACPAGE",
+      "updated": 1631523720890,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631523519072,
+        "fromPath": "http://data.isjs.cn/basic/index.html#/-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/error/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631523519072
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1921b2313328e3b79b94",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACTIME",
+      "updated": 1631525153015,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/index.html",
+        "sTme": 1631524951719,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f1921b2313328e3b79b95",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/index.html",
+      "type": "ACPAGE",
+      "updated": 1631525153035,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631524951722,
+        "fromPath": "http://data.isjs.cn/error/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631524951722
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f60cbb2313328e3b79c9b",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACTIME",
+      "updated": 1631543499390,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACTIME",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631543297898,
+        "WT": 9,
+        "TCP": 0,
+        "ONL": 0,
+        "ALLRT": 3,
+        "TTFB": 9,
+        "DNS": 0
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f60cbb2313328e3b79c9c",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACPAGE",
+      "updated": 1631543499395,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACPAGE",
+        "sTme": 1631543297900,
+        "fromPath": "http://data.isjs.cn/index.html-{\"search\":\"\"}",
+        "toPath": "http://data.isjs.cn/performance/index.html",
+        "toParams": {
+          "search": ""
+        },
+        "inTime": 0,
+        "outTime": 1631543297900
+      },
+      "__v": 0
+    },
+    {
+      "_id": "613f60ccb2313328e3b79c9d",
+      "uuid": "C2812987079B20C5",
+      "ip": "127.0.0.1",
+      "referer": "http://data.isjs.cn/performance/index.html",
+      "type": "ACCOMP",
+      "updated": 1631543500215,
+      "token": "",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
+      "_acData": {
+        "type": "ACCOMP",
+        "path": "http://data.isjs.cn/performance/index.html",
+        "sTme": 1631543298667,
+        "componentsTimes": {
+          "vue-component-35-Icon": [
+            524,
+            524,
+            523,
+            523,
+            523,
+            522,
+            522,
+            521,
+            521
+          ],
+          "vue-component-49-MenuItem": [
+            525,
+            524,
+            523,
+            523,
+            523,
+            523,
+            522,
+            521,
+            521
+          ],
+          "vue-component-47-Menu": [525],
+          "vue-component-39-Sider": [526],
+          "vue-component-26-Divider": [516],
+          "vue-component-13-Card": [518],
+          "vue-component-62-Row": [517],
+          "vue-component-42-Layout": [519]
+        }
+      },
+      "__v": 0
+    }
+  ]
+}

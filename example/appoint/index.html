@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="vue-dataac 官方文档 Vue 前端监控插件 Vue用户行为监控插件 异常监控插件 https://github.com/adminV/Vue-dataAc">
+  <title>Vue-dataAc 文档</title>
+  <link rel="stylesheet" href="../lib/styles/basic.css">
+  <link rel="stylesheet" href="../lib/styles/iview.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d147583b1d02ef3c79b1a47762c85daa";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+<body>
+<div id="load">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #load {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .loader {
+      margin: 30vh auto 0;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 5px solid #666;
+      border-bottom: 5px solid #fff;
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear
+    }
+
+    .loader {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .pCenter {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-indent: 0.5em;
+      margin-top: 10px;
+    }
+  </style>
+  <div class="loader"></div>
+  <p class="pCenter">加载中...</p>
+</div>
+<div id="app" style="display: none">
+  <div class="layout">
+    <Layout class="dataac-headLayout" >
+      <Sider>
+        <i-Menu active-name="4" theme="dark" width="auto" >
+          <p class="dataac-menuLogo">
+            功能列表
+          </p>
+          <menu-item :name="item.name" v-for="(item, index) in menuData" :key="index" @click.native="window.location.href =  window.location.origin + item.path">
+            <Icon :type="item.icon"></Icon>
+            <span>{{item.text}}</span>
+          </menu-item>
+        </i-Menu>
+      </Sider>
+      <Layout class="dataAc-layout">
+        <Header class="dataAc-header">
+          <h3 :style="{height: '50px',lineHeight: '50px', fontWeight:'bold'}">Vue DataAc Demo</h3>
+        </Header>
+        <Content class="dataAc-content">
+          <Card :bordered="false">
+            <p slot="title">输入框埋点采集</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <label>输入框（已埋点）</label>
+                  <i-Input class="ac_input" v-model="inputValue" placeholder="" ></i-Input>
+                </i-Col>
+                <i-Col span="10" >
+                  <label>输入框（未埋点）</label>
+                  <i-Input v-model="inputValue2" placeholder="" ></i-Input>
+                </i-Col>
+                <i-Col span="10" >
+                  <label>密码输入框（未埋点）</label>
+                  <i-Input type="password" v-model="inputPassword" placeholder="">
+                    <Icon type="ios-lock-outline" slot="prepend"></Icon>
+                  </i-Input>
+                </i-Col>
+                <i-Col span="10" >
+                  <label>textarea（已埋点）</label>
+                  <i-Input class="ac_input" v-model="desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="textarea ..."></i-Input>
+                </i-Col>
+                <i-Col span="10" >
+                  <label>textarea（未埋点）</label>
+                  <i-Input v-model="desc1" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="textarea ..."></i-Input>
+                </i-Col>
+              </Row>
+
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                主动埋点采集，需要对采集项目增加指定 class，并通过 selector 配置传递该 class 值<br/>
+                很多Ui库组件库都对原生元素做了封装，所以此处的 selector 根据实际场景进行配置
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false">
+            <p slot="title">点击事件采集</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="20" >
+                  <i-Button class="ac_click">已埋点按钮</i-Button>
+                  <i-Button type="primary">未埋点按钮</i-Button>
+                  <i-Button type="dashed">未埋点按钮</i-Button>
+                  <i-Button type="text">未埋点按钮</i-Button>
+                </i-Col>
+                <i-Col span="20" >
+                  <Icon class="ac_click" type="ios-basket" ></Icon>已埋点icon
+                </i-Col>
+              </Row>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                主动埋点采集，需要对指定的元素增加指定 class, 并配置对应的 classTag <br/>
+                要注意，主动埋点的情况下 maxHelpfulCount 同样生效，避免递归带来的性能问题
+              </span>
+            </p>
+          </Card>
+        </Content>
+      </Layout>
+    </Layout>
+  </div>
+
+  <script type="text/javascript" src="../lib/menu.js"></script>
+  <script type="text/javascript" src="../lib/vue.min.js"></script>
+  <script type="text/javascript" src="../lib/axios.min.js"></script>
+  <script type="text/javascript" src="../lib/iview.min.js"></script>
+  <script type="text/javascript" src="../lib/vue-dataAc.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

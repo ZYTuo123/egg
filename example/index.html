@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="vue-dataac 官方文档 Vue 前端监控插件 Vue用户行为监控插件 异常监控插件 https://github.com/adminV/Vue-dataAc">
+  <title>Vue-dataAc 文档</title>
+  <link rel="stylesheet" href="lib/styles/basic.css">
+  <link rel="stylesheet" href="lib/styles/iview.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d147583b1d02ef3c79b1a47762c85daa";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</head>
+<body>
+<div id="load">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #load {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .loader {
+      margin: 30vh auto 0;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 5px solid #666;
+      border-bottom: 5px solid #fff;
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear
+    }
+
+    .loader {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .pCenter {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-indent: 0.5em;
+      margin-top: 10px;
+    }
+  </style>
+  <div class="loader"></div>
+  <p class="pCenter">加载中...</p>
+</div>
+<div id="app" style="display: none">
+  <div class="layout">
+    <Layout class="dataac-headLayout" >
+      <Sider class="dataac-sider"  width="250">
+        <i-Menu active-name="0" :open-names="['0', ]"	 theme="dark" width="250" >
+          <p class="dataac-menuLogo">
+            功能列表
+          </p>
+          <Submenu name="0">
+            <div slot="title">
+              <Icon :type="subMenu.icon"></Icon>
+              <span>{{subMenu.text}}</span>
+            </div>
+            <template v-for="(item, index) in subMenu.child" :key="index">
+              <menu-item v-if="!item.child" :name="item.name" :to="item.path">
+                <Icon :type="item.icon"></Icon>
+                <span>{{item.text}}</span>
+              </menu-item>
+              <Submenu v-else :name="item.name">
+                <div slot="title">
+                  <Icon :type="item.icon"></Icon>
+                  <span>{{item.text}}</span>
+                </div>
+                <menu-item :name="subitem.name" v-for="(subitem, subindex) in item.child" :key="subindex" :to="subitem.path">
+                  <Icon :type="subitem.icon"></Icon>
+                  <span>{{subitem.text}}</span>
+                </menu-item>
+              </Submenu>
+            </template>
+
+          </Submenu>
+          <menu-item :name="item.name" v-for="(item, index) in menuData" :key="index" @click.native="window.location.href =  window.location.origin + item.path">
+            <Icon :type="item.icon"></Icon>
+            <span>{{item.text}}</span>
+          </menu-item>
+        </i-Menu>
+      </Sider>
+      <Layout class="dataAc-layout">
+        <Header class="dataAc-header" style="left:250px">
+          <h3 :style="{height: '50px',lineHeight: '50px', fontWeight:'bold'}">Vue DataAc Document</h3>
+        </Header>
+        <Content class="dataAc-document">
+          <Card :bordered="false" id="github">
+            <p slot="title">支持一下</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <img class="dataac-logo" src="http://www.isjs.cn/wp-content/uploads/2013/06/2018_07_25_1136562613-1.png" alt="关注我哟">
+                </i-Col>
+                <i-Col span="10" >
+                  <img class="dataac-logo" src="http://www.isjs.cn/wp-content/uploads/2020/06/Wechat-z.png" alt="感谢">
+                </i-Col>
+                <i-Col span="2" ></i-Col>
+              </Row>
+
+              <i-Button type="warning" ghost icon="logo-github" to="https://github.com/adminV/Vue-dataAc">GitHub:Vue-dataAc</i-Button>
+
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                开发不易，希望大家能帮忙点个star，粉一下我的公众号  Thanks♪(･ω･)ﾉ
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="tag">
+            <p slot="title">标识类配置，作为数据上报信息的分类标识</p>
+            <p class="dataac-cardContent">
+              <i-Table border :columns="columns1" :data="data1"></i-Table>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                数据上报到后台，用上面的标记进行筛选分类，需要做通知告警的发送消息
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="switch">
+            <p slot="title">全局开关，用来自定义采集范围</p>
+            <p class="dataac-cardContent">
+              <i-Table border :columns="columns2" :data="data2"></i-Table>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                以上开关默认都是打开状态，这就导致上报数据量过大，过于频繁<br/>
+                所以根据实际需要，不要要用户行为，不需要性能分析就关闭开关<br/>
+                上面的配置项有几组关联，分别是：<br/>
+                useStorage，maxDays<br/>
+                openComponent，maxComponentLoadTime<br/>
+                openXhrTimeOut，maxRequestTime，customXhrErrCode，openXhrHock
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="behavior">
+            <p slot="title">行为采集配置</p>
+            <p class="dataac-cardContent">
+              <i-Table border :columns="columns3" :data="data3"></i-Table>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                行为数据会采集用户点击输入等行为，用于轨迹追踪，防抵赖，转化分析等场景<br/>
+                根据实际使用情况进行搜集<br/>
+                这里面埋点和全量采集的区别我们放到了class上面，通过指定要采集的元素，精准定位数据<br/>
+                要注意的一点是，点击事件触发的元素可能不是目标元素，我们通过向上递归查找有效元素（有class或id）<br/>
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="datareport">
+            <p slot="title">数据上报配置</p>
+            <p class="dataac-cardContent">
+              <i-Table border :columns="columns4" :data="data4"></i-Table>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                行为数据会采集用户点击输入等行为，用于轨迹追踪，防抵赖，转化分析等场景<br/>
+                根据实际使用情况进行搜集<br/>
+                这里面埋点和全量采集的区别我们放到了class上面，通过指定要采集的元素，精准定位数据<br/>
+                要注意的一点是，点击事件触发的元素可能不是目标元素，我们通过向上递归查找有效元素（有class或id）<br/>
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="setCustomAc">
+            <p slot="title">vue.$vueDataAc.setCustomAc( {cusKey: String, cusVal: Any} )</p>
+            <p class="dataac-cardContent">
+              <span class="dataac-subText">
+                用于自定义事件的约定上报，例如在业务场景中对某些逻辑的埋点<br/>
+                自定义事件上报逻辑与其他事件上报共用，可以通过 openReducer 限制频率
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="postAcData">
+            <p slot="title">vue.$vueDataAc.postAcData()</p>
+            <p class="dataac-cardContent">
+              <span class="dataac-subText">
+                手动上报当前采集信息
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="setUserToken">
+            <p slot="title">vue.$vueDataAc.setUserToken(userToken: String)</p>
+            <p class="dataac-cardContent">
+              <span class="dataac-subText">
+                用于关联用户后台标记，利用用户登录后的userid，sessionId<br/>
+                目的是将前后台日志打通，方便查找模拟用户
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource">
+            <p slot="title" id="dataSource1">页面访问，路由跳转，等同于PV/UV数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+  "uuid": "F6A6C801B7197603",             //用户标识
+  "t"   : "",                             //后端 用户标识/登录标识 默认为空，
+                                            通过setUserToken设置
+  "acData" : {
+    "type"       :  "ACPAGE"            //行为标识
+    "sTme"       :  1591760011268       //数据上报时间
+    "fromPath"   :  "/register?type=1"  //来源路由
+    "formParams" :  "{'type': 1}"       //来源参数
+    "toPath"     :  "/login"            //目标路由
+    "toParams"   :  "{}"                //目标参数
+    "inTime"     :  1591760011268       //页面进入时间
+    "outTime"    :  1591760073422       //离开页面时间
+  }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource2">
+            <p slot="title">代码异常数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                 //用户标识
+        "t"   : "",
+        "acData" : {
+             "type"    : "ACCERR",     		        //上报数据类型：代码异常数据
+             "path"    : "www.domain.com/w/w/w/", //事件发生页面的url
+             "sTme"    : "1591760073422",	        //事件上报时间
+             "msg"     : "script error",          //异常摘要
+             "line"    : "301",  		              //代码行数
+             "col"     : "13",  		              //代码列下标
+             "err"     : "error message",         //错误信息
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource3">
+            <p slot="title">资源加载异常数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                         //用户标识
+        "t"   : "",
+        "acData" : {
+             "type"        : "ACSCERR",     		            //上报数据类型：资源加载异常数据
+             "path"        : "www.domain.com/w/w/w/",       //事件发生页面地址
+             "sTme"        : "1591760073422",	              //事件上报时间
+             "fileName"    : "test.js",                     //文件名
+             "resourceUri" : "http://isjs.cn/js/test.js",   //资源地址
+             "tagName"     : "script",  		                //标签类型
+             "outerHTML"   : "script ...",                  //标签内容
+          }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource4">
+            <p slot="title">Promise 异常数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"        : "ACPRERR",     		           //上报数据类型：Promise 异常数据
+            "path"        : "www.domain.com/w/w/w/",     //事件发生页面地址
+            "sTme"        : "1591760073422",	           //事件上报时间
+            "reason"      : "reason"                     //异常说明
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource5">
+            <p slot="title">自定义事件数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"        : "ACCUSTOM",     		         //上报数据类型：自定义事件数据
+            "path"        : "www.domain.com/w/w/w/",     //事件发生页面地址
+            "sTme"        : "1591760073422",	           //事件上报时间
+            "cusKey"      : "click-button-001"           //自定义事件key，用户定义
+            "cusVal"      ："1"                          //自定义事件值，用户定义
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource6">
+            <p slot="title">Vue异常监控数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACVUERR",     		         //上报数据类型：Vue异常监控数据
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "componentName" : "Button"                   //组件名
+            "fileName"      : "button.js"                //组件文件
+            "propsData"     : "{}"                       //组件props
+            "err"           : "..."                      //错误堆栈
+            "info"          : "信息"                      //错误信息
+            "msg"           : "1"                        //异常摘要
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource7">
+            <p slot="title">点击事件监控数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACCLIK",     		         //上报数据类型：点击事件监控数据
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "eId"           : ""                         //元素id属性
+            "className"     : "login-form"               //点击元素class属性
+            "val"           : "标题"                      //元素value或者innertext
+            "attrs"         : "{class:'...', placeholder:'...', type:'...'}"       //元素所有属性对象
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource8">
+            <p slot="title">输入事件监控数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACINPUT",     		         //上报数据类型：输入事件监控数据
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "eId"           : ""                         //元素id属性
+            "className"     : "van-field__control"       //元素class属性
+            "val"           : "0:111,638:11,395:1,327:,1742:5,214:55,207:555,175:5555"
+                                                         //时间:当前值，用逗号分隔，体现时间变化
+            "attrs"         : "{class:'...', placeholder:'...', type:'...'}"
+                                                         //元素所有属性对象
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource9">
+            <p slot="title">接口异常数据（包含 请求时间过长/自定义code/请求错误）</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACRERR",     		         //上报数据类型：接口异常数据
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "errSubType"    : "http/time/custom"         //异常类型：【time: 请求时间过长】【custom: 自定义code】【http:请求错误】
+            "responseURL"   : "/static/push"             //请求接口
+            "method"        : "GET"                      //请求方式
+            "readyState"    : 4                          //xhr.readyState状态码
+            "status"        : "404"                      //请求状态码
+            "statusText"    : "not found"                //错误描述
+            "requestTime"   : 3000                       //请求耗时
+            "response"      : "{...}"                    //接口响应摘要，截取前100个字符
+            "query"         : "{}"                       //请求参数，用 openXhrQuery 配置打开，注意用户信息泄露
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource10">
+            <p slot="title">页面性能监控数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACRERR",     		         //上报数据类型：页面性能监控数据
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "WT"            : 1000                       //白屏时间
+            "TCP"           : 1000                       //TCP连接耗时
+            "ONL"           : 1000                       //执行onload事件耗时
+            "ALLRT"         : 1000                       //所有请求耗时
+            "TTFB"          : 1000                       //TTFB读取页面第一个字节的时间
+            "DNS"           : 1000                       //DNS查询时间
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="dataSource11">
+            <p slot="title">Vue组件渲染异常数据</p>
+            <p class="dataac-cardContent">
+            <pre>
+{
+        "uuid": "F6A6C801B7197603",                      //用户标识
+        "t"   : "",
+        "acData" : {
+            "type"          : "ACCOMP",     		         //上报数据类型：页面性能监控
+            "path"          : "www.domain.com/w/w/w/",   //事件发生页面地址
+            "sTme"          : "1591760073422",	         //事件上报时间
+            "componentsTimes" : [                        //渲染超时组件列表
+                '组件名': [1000,1200,1090]
+            ]
+         }
+}
+              </pre>
+            </p>
+          </Card>
+          <Card :bordered="false" id="QA">
+            <p slot="title">解决方案</p>
+            <p class="dataac-cardContent">
+              <b>1.我需要采集用户行为吗?</b><br/>
+              -- 用户行为相关数据，我认为对产品有益，可以用于分析转化，页面热点图等<br/>
+              -- 根据数据对产品进行调整。所以看你的产品类型 2C 的产品一般有这样的需求<br/>
+
+              <b>2.我需要监控页面异常吗？</b><br/>
+              -- 从前端角度是有必要的，用户遇到问题，经过问题上报，汇总，最终分配到你，时间不可控<br/>
+              -- 能在第一时间对端上的问题进行告警，会大大提高解决问题的效率<br/>
+              -- 所以我认为需要有一个监控系统作为生产安全的兜底方案<br/>
+
+              <b>3.我需要采集页面性能&组件性能吗？?</b><br/>
+              -- 页面性能组件性能，我建议开启，生产测试环境可能因为数据不相同，会有差异性bug<br/>
+              -- 可能会导致组件渲染慢，影响体验<br/>
+              -- 但是前提是要把阈值调大，以免数据过多，大量数据上报，会降低对报警的敏感度<br/>
+
+              <b>4.数据采集后如何进行整理分析?</b><br/>
+              -- 我们的数据上报分为两种，接口和图片<br/>
+              -- 其实不论哪一种方式，最终都要将数据本地化，持久化。<br/>
+              -- 可以问一下公司后端的同事，他们的数据怎么分析，对接他们的上报接口就可以。<br/>
+              -- 一般这样的日志搜集分析，会用到 ELK 系统。没有的话让运维帮忙搭建一套。<br/>
+              -- 通过接口将上报的数据存储到本地文件或数据库中。或是通过图片上报，将数据存储在nginx中<br/>
+              -- 然后用ELK对接日志即可。ELK有提供查询API，你可以做一套轮训告警系统<br/>
+
+              <b>5.我需要采集用户行为吗?</b><br/>
+              -- 前端日志的唯一标识是uuid，后端唯一标识可以通过 setUserToken方法将用户唯一 id 和 uuid 做关联<br/>
+
+              <b>6.我需要采集用户行为吗?</b><br/>
+              -- 建议你分批次，分功能，做足够量的测试之后，逐步打开开关上线。<br/>
+              -- 我只能保证在我的场景下可以正常使用，但是不同的产品，不同的用户场景，不能百分百保证<br/>
+            </p>
+          </Card>
+        </Content>
+      </Layout>
+    </Layout>
+  </div>
+</div>
+  <script type="text/javascript" src="lib/menu.js"></script>
+  <script type="text/javascript" src="lib/vue.min.js"></script>
+  <script type="text/javascript" src="lib/vue-router.min.js"></script>
+  <script type="text/javascript" src="lib/axios.min.js"></script>
+  <script type="text/javascript" src="lib/iview.min.js"></script>
+  <script type="text/javascript" src="lib/vue-dataAc.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

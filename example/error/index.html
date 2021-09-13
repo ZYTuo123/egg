@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="vue-dataac 官方文档 Vue 前端监控插件 Vue用户行为监控插件 异常监控插件 https://github.com/adminV/Vue-dataAc">
+  <title>Vue-dataAc 文档</title>
+  <link rel="stylesheet" href="../lib/styles/basic.css">
+  <link rel="stylesheet" href="../lib/styles/iview.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d147583b1d02ef3c79b1a47762c85daa";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+</head>
+<body>
+<div id="load">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #load {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .loader {
+      margin: 30vh auto 0;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 5px solid #666;
+      border-bottom: 5px solid #fff;
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear
+    }
+
+    .loader {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .pCenter {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-indent: 0.5em;
+      margin-top: 10px;
+    }
+  </style>
+  <div class="loader"></div>
+  <p class="pCenter">加载中...</p>
+</div>
+<div id="app" style="display: none">
+  <div class="layout">
+    <Layout class="dataac-headLayout" >
+      <Sider>
+        <i-Menu active-name="2" theme="dark" width="auto" >
+          <p class="dataac-menuLogo">
+            功能列表
+          </p>
+          <menu-item :name="item.name" v-for="(item, index) in menuData" :key="index" @click.native="window.location.href =  window.location.origin + item.path">
+            <Icon :type="item.icon"></Icon>
+            <span>{{item.text}}</span>
+          </menu-item>
+        </i-Menu>
+      </Sider>
+      <Layout class="dataAc-layout">
+        <Header class="dataAc-header">
+          <h3 :style="{height: '50px',lineHeight: '50px', fontWeight:'bold'}">Vue DataAc Demo</h3>
+        </Header>
+        <Content class="dataAc-content">
+          <Card :bordered="false">
+            <p slot="title">代码异常采集</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <i-Button type="info" @click="window.CodeErr()">点击按钮执行语法错误代码</i-Button>
+                </i-Col>
+              </Row>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                监控代码异常，尽可能在项目中启用 eslint 语法检查，避免简单错误上线<br/>
+                vue已经代理了大部分异常，所以此处上报的是Vue异常
+                <br/>
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false">
+            <p slot="title">请求异常</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <i-Button type="info" @click="sendError">点击按钮发送请求</i-Button>
+                </i-Col>
+                </Row>
+                <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                点击按钮会通过 axios 请求一个不存在的地址
+                <br/>
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false">
+            <p slot="title">promise 异常</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <i-Button type="info" @click="promiseErr">点击按钮执行 promise 异常代码</i-Button>
+                </i-Col>
+              </Row>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                promise 中的 reject() 没有被正常处理时抛出异常<br/>
+                <br/>
+              </span>
+            </p>
+          </Card>
+        </Content>
+      </Layout>
+    </Layout>
+  </div>
+</div>
+  <script type="text/javascript" src="../lib/menu.js"></script>
+  <script type="text/javascript" src="../lib/vue.min.js"></script>
+  <script type="text/javascript" src="../lib/axios.min.js"></script>
+  <script type="text/javascript" src="../lib/iview.min.js"></script>
+  <script type="text/javascript" src="../lib/vue-dataAc.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

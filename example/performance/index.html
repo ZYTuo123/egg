@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="vue-dataac 官方文档 Vue 前端监控插件 Vue用户行为监控插件 异常监控插件 https://github.com/adminV/Vue-dataAc">
+  <title>Vue-dataAc 文档</title>
+  <link rel="stylesheet" href="../lib/styles/basic.css">
+  <link rel="stylesheet" href="../lib/styles/iview.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d147583b1d02ef3c79b1a47762c85daa";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+<body>
+<div id="load">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #load {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .loader {
+      margin: 30vh auto 0;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 5px solid #666;
+      border-bottom: 5px solid #fff;
+      -webkit-animation: load8 1.1s infinite linear;
+      animation: load8 1.1s infinite linear
+    }
+
+    .loader {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px
+    }
+
+    @-webkit-keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes load8 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .pCenter {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      text-indent: 0.5em;
+      margin-top: 10px;
+    }
+  </style>
+  <div class="loader"></div>
+  <p class="pCenter">加载中...</p>
+</div>
+<div id="app" style="display: none">
+  <div class="layout">
+    <Layout class="dataac-headLayout" >
+      <Sider>
+        <i-Menu active-name="3" theme="dark" width="auto" >
+          <p class="dataac-menuLogo">
+            功能列表
+          </p>
+          <menu-item :name="item.name" v-for="(item, index) in menuData" :key="index" @click.native="window.location.href =  window.location.origin + item.path">
+            <Icon :type="item.icon"></Icon>
+            <span>{{item.text}}</span>
+          </menu-item>
+        </i-Menu>
+      </Sider>
+      <Layout class="dataAc-layout">
+        <Header class="dataAc-header">
+          <h3 :style="{height: '50px',lineHeight: '50px', fontWeight:'bold'}">Vue DataAc Demo</h3>
+        </Header>
+        <Content class="dataAc-content">
+          <Card :bordered="false">
+            <p slot="title">页面加载性能</p>
+            <p class="dataac-cardContent">
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                通过performance属性获取页面时间点<br/>
+                保留了几个关键数据：<br/>
+                 WT： 白屏时间<br/>
+                 TCP： TCP连接耗时<br/>
+                 ONL： 执行onload事件耗时<br/>
+                 ALLRT： 所有请求耗时<br/>
+                 TTFB： TTFB读取页面第一个字节的时间<br/>
+                 DNS： DNS查询时间<br/>
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false">
+            <p slot="title">Vue 首次渲染组件性能</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <div style="width: 100%;height: 100px;overflow: scroll">
+                  <span v-for="(item, i) in new Array(100000).keys()" :key="i">
+                  {{i}}
+                </span>
+                </div>
+              </Row>
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                Vue 组件性能监控，目的是发现由于真实数据超预期导致的组件渲染慢问题<br/>
+                分别监控了首次渲染和异步更新数据导致的渲染慢<br/>
+                此处示例中我们将 maxComponentLoadTime 设置为 500 毫秒，方便触发上报
+              </span>
+            </p>
+          </Card>
+          <Card :bordered="false">
+            <p slot="title">Vue 组件更新数据性能</p>
+            <p class="dataac-cardContent">
+              <Row type="flex" justify="space-between" >
+                <i-Col span="10" >
+                  <i-Button type="info" @click="genBigData">点击对组件进行大数据更新</i-Button>
+                </i-Col>
+                <div style="width: 100%;height: 100px;overflow: scroll">
+                  <i v-for="(item, i) in asyncArrayData" :key="i">
+                    {{i}}
+                  </i>
+                </div>
+              </Row>
+
+              <Divider dashed orientation="left">说明：</Divider>
+              <span class="dataac-subText">
+                当组件通过异步数据进行渲染时，同样监控组件渲染耗时
+              </span>
+            </p>
+          </Card>
+        </Content>
+      </Layout>
+    </Layout>
+  </div>
+</div>
+  <script type="text/javascript" src="../lib/menu.js"></script>
+  <script type="text/javascript" src="../lib/vue.min.js"></script>
+  <script type="text/javascript" src="../lib/axios.min.js"></script>
+  <script type="text/javascript" src="../lib/iview.min.js"></script>
+  <script type="text/javascript" src="../lib/vue-dataAc.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

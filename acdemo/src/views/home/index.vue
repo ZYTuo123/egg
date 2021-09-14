@@ -4,7 +4,7 @@
       <el-aside width="200px">
         <div style="height:60px;line-height: 60px;">采集功能列表</div>
         <el-menu
-          default-active="performance"
+          default-active="abnormal"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose"
@@ -13,17 +13,25 @@
           active-text-color="#ffd04b"
           router
         >
-          <el-menu-item index="performance">
-            <i class="el-icon-menu"></i>
-            <span slot="title">页面性能监控</span>
-          </el-menu-item>
           <el-menu-item index="abnormal">
             <i class="el-icon-document"></i>
-            <span slot="title">异常监控</span>
+            <span slot="title">JS异常监控</span>
+          </el-menu-item>
+          <el-menu-item index="network">
+            <i class="el-icon-upload"></i>
+            <span slot="title">网络异常监控</span>
+          </el-menu-item>
+          <el-menu-item index="performance">
+            <i class="el-icon-menu"></i>
+            <span slot="title">渲染性能监控</span>
           </el-menu-item>
           <el-menu-item index="action">
-            <i class="el-icon-setting"></i>
+            <i class="el-icon-s-opportunity"></i>
             <span slot="title">用户行为监控</span>
+          </el-menu-item>
+          <el-menu-item index="analysis">
+            <i class="el-icon-data-line"></i>
+            <span slot="title">异常分析看板</span>
           </el-menu-item>
         </el-menu>
       </el-aside>

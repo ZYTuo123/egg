@@ -2,10 +2,12 @@ import Home from "@/views/home";
 import performance from "@/components/performance";
 import abnormal from "@/components/abnormal";
 import action from "@/components/action";
+import network from "@/components/network";
+import analysis from "@/components/analysis";
 const routes = [
   {
     path: "/",
-    redirect: "/performance",
+    redirect: "/abnormal",
     component: Home,
     children: [
       {
@@ -19,6 +21,14 @@ const routes = [
       {
         path: "/action",
         component: action,
+      },
+      {
+        path: "/network",
+        component: network,
+      },
+      {
+        path: "/analysis",
+        component: analysis,
       },
     ],
   },
